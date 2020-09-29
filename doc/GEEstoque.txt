@@ -1,0 +1,5 @@
+- Quantidade de entrada, saída e saldo da mercadoria
+- Valor custo médio e anual do produto
+- Data de entrada e saída
+- Estoque mínimo
+- Código e descricao 
