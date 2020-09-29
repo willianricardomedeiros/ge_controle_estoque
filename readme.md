@@ -11,8 +11,8 @@
 
 Este projeto faz parte do trabalho da matéria de PHP do curso de Especialização e Pós-Graduação em Desenvolvimento de Sistemas Web e Mobile Programação Web em PHP. 
 
-Prof. Dr. Rodolfo Miranda Pereira
-Aluno: Willian Ricardo Medeiros
+- Prof. Dr. Rodolfo Miranda Pereira
+- Aluno: Willian Ricardo Medeiros
 
 
 O projeto é uma atividade avaliativa utilizando o Framework Laravel.
