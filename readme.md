@@ -19,6 +19,8 @@ O projeto é uma atividade avaliativa utilizando o Framework Laravel.
 
 O sistema GE-Controle_Estoque é inicialmente um cadastro de Produto contendo 2 entidades: Categoria e Produto.
 
+```
+
 +-------------------+                            +-----------------------+           +-------------------+
 |      Categoria    |                            |       Produto         |           |      Users        |
 +-------------------+                            +-----------------------+           +-------------------+
@@ -30,8 +32,8 @@ O sistema GE-Controle_Estoque é inicialmente um cadastro de Produto contendo 2 
                                                  +-----------------------+           | modify_at         |
                                                                                      |                   |
                                                                                      +-------------------+
-
-Este sistema tem como objetivo futuro de se transformar em um Controle de Estoque para controle dos produtos de um Grupo Escoteiro, sendo futuramente acrescido de mais entidades.   
+```
+Este sistema tem como objetivo futuro de se transformar em um Controle de Estoque para controle dos produtos de um Grupo Escoteiro, sendo futuramente acrescido de mais entidades e funcionalidades.   
 
 
 ## About Laravel
