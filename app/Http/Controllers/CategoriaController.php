@@ -3,11 +3,14 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+
 use App\Categoria;
 use App\Produto;
 use App\Http\Requests\CategoriaFormRequest;
+
 use DB;
 
+use Throwable;
 
 class CategoriaController extends Controller
 {
@@ -57,7 +60,7 @@ class CategoriaController extends Controller
 	public function store(CategoriaFormRequest $request){
 		// Persistindo os dados 
 		DB::beginTransaction();
-			Categoria::create($request->all());
+		Categoria::create($request->all());
 		DB::commit();
 		
 		// Mensagem de Sucesso
@@ -72,7 +75,7 @@ class CategoriaController extends Controller
 			$categoria = Categoria::find($codCategoria);
 			$categoria->delete();
 		}
-		catch (Exception $qe) {
+		catch (Throwable $qe) {
 			return redirect()->back()->withErrors('Nao foi possivel excluir a categoria.');
         }
         // Mensagem de Sucesso

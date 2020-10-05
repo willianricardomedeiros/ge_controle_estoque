@@ -30,10 +30,10 @@ class RegisterController extends Controller
 		$data = $request->except('_token');
 		$data['password'] = Hash::make($data['password']);
 		$user = User::create($data);
+		
 		Auth::login($user);
 		
 		return redirect()->route('listarCategorias');
 	}
-
     
 }
