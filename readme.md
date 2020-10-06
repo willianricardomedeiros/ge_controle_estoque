@@ -1,4 +1,34 @@
-<p align="center"><img src="https://res.cloudinary.com/dtfbvvkyp/image/upload/v1566331377/laravel-logolockup-cmyk-red.svg" width="400"></p>
+
+## Sobre o Projeto
+
+Este projeto faz parte do trabalho da matéria de PHP do curso de Especialização e Pós-Graduação em Desenvolvimento de Sistemas Web e Mobile Programação Web em PHP. 
+
+- Prof. Dr. Rodolfo Miranda Pereira
+- Aluno: Willian Ricardo Medeiros
+
+
+O projeto é uma atividade avaliativa utilizando o Framework Laravel.
+
+O sistema GE-Controle_Estoque é inicialmente um cadastro de Produto contendo 2 entidades: Categoria e Produto.
+
+```
+
++-------------------+                            +-----------------------+           +-------------------+
+|      Categoria    |                            |       Produto         |           |      Users        |
++-------------------+                            +-----------------------+           +-------------------+
+| codCategoria (PK) |                            | codProduto (PK)       |           | id (PK)           |
+| nome              | 1|----------------------|< | nome                  |           | name              |
+|                   |                            | quantidadeMinima      |           | email             |
++-------------------+                            | codCategoria (FK)     |           | password          |
+                                                 |                       |           | created_at        |
+                                                 +-----------------------+           | modify_at         |
+                                                                                     |                   |
+                                                                                     +-------------------+
+```
+Este sistema tem como objetivo futuro de se transformar em um Controle de Estoque para controle dos produtos de um Grupo Escoteiro, sendo futuramente acrescido de mais entidades e funcionalidades.   
+
+
+## About Laravel
 
 <p align="center">
 <a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
@@ -6,8 +36,6 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/v/stable.svg" alt="Latest Stable Version"></a>
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/license.svg" alt="License"></a>
 </p>
-
-## About Laravel
 
 Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
 
