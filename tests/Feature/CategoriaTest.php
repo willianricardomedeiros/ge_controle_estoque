@@ -53,6 +53,8 @@ class CategoriaTest extends TestCase
     
     /**
      * Teste de persistencia com nome Nulo em Categoria 
+     * 
+     * @return void
      */
     public function testGravandoCategoriaComNomeNulo()
     {
@@ -67,6 +69,7 @@ class CategoriaTest extends TestCase
     
     /**
      * Teste de persistencia com nome maior que esperado em Categoria 
+     * @return void
      */
     public function testGravandoCategoriaComNomeMaiorPermitido()
     {
@@ -84,6 +87,7 @@ class CategoriaTest extends TestCase
     
     /**
      * Teste de persistencia em Categoria realizando criacao, busca e delecao
+     * @return void
      */
     public function testPersitenciaCategoriaCriacaoRandomica()
     {
@@ -105,7 +109,5 @@ class CategoriaTest extends TestCase
 			$this->assertTrue(false, '\nFalha na criação de categoria!');
 		}
     }
-    
-    
     
 }

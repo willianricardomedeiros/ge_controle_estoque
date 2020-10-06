@@ -8,6 +8,9 @@ use App\Produto;
 use App\Http\Requests\ProdutoFormRequest;
 use DB;
 
+/**
+ * Classe Controller de Produto
+ */
 class ProdutoController extends Controller
 {
  

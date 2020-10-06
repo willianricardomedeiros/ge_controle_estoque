@@ -26,35 +26,4 @@ class ExampleTest extends TestCase
         $response->assertStatus(200);
     }
 
-    public function testCategoriaComNomeNulo()
-    {
-		//$this->expectException(Exception::class);
-		
-		// SQLSTATE[23000]: Integrity constraint violation: 19 NOT NULL constraint failed: categoria.nome
-		$this->expectExceptionCode(23000);
-		 
-		Categoria::create(["nome" => null]);
-    }
-
-	public function testCategoriaCriacaoRandomica()
-    {
-		try{
-			$nome = Str::random(60);
-			
-			DB::beginTransaction();
-			
-			Categoria::create(["nome" => $nome]);
-			$categoria = Categoria::firstOrFail()->where('nome', $nome);
-			$categoria->delete();
-			
-			DB::commit();
-			
-			$this->assertTrue(true);
-		}
-		catch(Exception $e){
-			DB::rollBack();
-			
-			$this->assertTrue(false, 'Falha na criação de categoria!');
-		}
-    }
 }

@@ -8,7 +8,9 @@ use Illuminate\Support\Facades\Validator;
 use App\User;
 use Auth;
 
-
+/**
+ * Classe Controller de Registro (Register)
+ */
 class RegisterController extends Controller
 {
    

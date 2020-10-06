@@ -53,6 +53,7 @@ class ProdutoTest extends TestCase
 
     /**
      * Teste de persistencia com nome Nulo em Categoria 
+     * @return void
      */
     public function testGravandoProdutoComNomeNulo()
     {
@@ -68,6 +69,7 @@ class ProdutoTest extends TestCase
     
     /**
      * Teste de persistencia em Produto realizando criacao, busca e delecao
+     * @return void
      */
     public function testPersitenciaProdutoCriacaoRandomica()
     {

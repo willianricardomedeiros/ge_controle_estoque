@@ -12,6 +12,9 @@ use DB;
 
 use Throwable;
 
+/**
+ * Classe Controller de Categoria
+ */
 class CategoriaController extends Controller
 {
 
